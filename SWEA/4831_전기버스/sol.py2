@@ -1,0 +1,11 @@
+for tc in range(1, T+1):
+    N = input()
+    #print(N)
+    knm = list(map(int,N.split())) # K, N, M
+    numbers = list(map(int,input().split()))
+    counter = [0 for i in range(knm[1]+1)]
+    for i in range(int(knm[1])+1):
+        for j in numbers:
+            if i == j:
+                counter[i]+=1
+    print(counter)
