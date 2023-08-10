@@ -21,11 +21,13 @@ input_path = file_path / 'input.txt'
 sys.stdin = open(input_path)
 
 T = int(input())
-
+ # 입력값이 정확히 어떤식으로 받아지는지
 for tc in range(1, T+1):
     N = int(input())
 
-    maze = [list(map(int, input())) for _ in range(N)]
+    maze = [list(map(int, input())) for _ in range(N)] 
+
+    #print(maze)
 
     # 시작점 찾기
     for i in range(N):
